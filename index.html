@@ -10,6 +10,10 @@
         padding-right: 40px;
         white-space: nowrap;
       }
+      .text {
+        font-style: italic;
+        color: #666666;
+      }
     </style>
   </head>
   <body>
@@ -24,7 +28,7 @@
         <audio controls preload="none"><source src="wavs/abs.wav"></audio>
       </div>
     </div>
-    <p class="toc_title">Contents</p>
+    <h3 id="toc_title">Contents</h3>
     <div id="toc_container">
     <ul>
       <li><a href="#ss">Single Speaker (LJ Speech Dataset)</a></li>
@@ -39,6 +43,26 @@
       <hr>
       <table>
         <tbody>
+        <tr>
+          <td>
+            <h4>Text</h4>
+          </td>
+          <td class="text">
+            that not more than one bottle of wine or one quart of beer could be issued at one time. No account was taken of the amount of liquors admitted in one day,
+          </td>
+          <td class="text">
+            The prisoner had nothing to deal with but wooden panels, and by dint of cutting and chopping he got both the lower panels out.
+          </td>
+          <td class="text">
+            have now come into general use and are obviously a great improvement on the ordinary "modern style" in use in England, which is in fact the Bodoni type
+          </td>
+          <td class="text">
+            At two:thirty-eight p.m., Eastern Standard Time, Lyndon Baines Johnson took the oath of office as the thirty-sixth President of the United States.
+          </td>
+          <td class="text">
+            The boy declared he saw no one, and accordingly passed through without paying the toll of a penny.
+          </td>
+        </tr>
         <tr>
           <td class="first-col">Ground Truth</td>
           <td><audio controls="" preload="none"><source src="wavs/ss_01_gt.wav"></audio></td>
@@ -101,6 +125,78 @@
     <div>
       <a name="ms"><h2>Multi-Speaker (VCTK Dataset)</h2></a>
       <hr>
+      <table>
+        <tbody>
+        <tr>
+          <td>
+            <h4>Text</h4>
+          </td>
+          <td class="text">
+            The teacher would have approved.
+          </td>
+          <td class="text">
+            The rainbow is a division of white light into many beautiful colors.
+          </td>
+          <td class="text">
+            There was great support all round the route.
+          </td>
+          <td class="text">
+            Brown is an interesting man, but he is not desperate.
+          </td>
+          <td class="text">
+            Military action is the only option we have on the table today.
+          </td>
+        </tr>
+        <tr>
+          <td class="first-col">Ground Truth</td>
+          <td><audio controls="" preload="none"><source src="wavs/ms_01_gt.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/ms_02_gt.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/ms_03_gt.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/ms_04_gt.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/ms_05_gt.wav"></audio></td>
+        </tr>
+        <tr>
+          <td class="first-col">Tacotron 2 + HiFi-GAN</td>
+          <td><audio controls="" preload="none"><source src="wavs/ms_01_th.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/ms_02_th.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/ms_03_th.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/ms_04_th.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/ms_05_th.wav"></audio></td>
+        </tr>
+        <tr>
+          <td class="first-col">Tacotron 2 + HiFi-GAN (fine-tuned)</td>
+          <td><audio controls="" preload="none"><source src="wavs/ms_01_thf.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/ms_02_thf.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/ms_03_thf.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/ms_04_thf.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/ms_05_thf.wav"></audio></td>
+        </tr>
+        <tr>
+          <td class="first-col">Glow-TTS + HiFi-GAN</td>
+          <td><audio controls="" preload="none"><source src="wavs/ms_01_gh.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/ms_02_gh.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/ms_03_gh.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/ms_04_gh.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/ms_05_gh.wav"></audio></td>
+        </tr>
+        <tr>
+          <td class="first-col">Glow-TTS + HiFi-GAN (fine-tuned)</td>
+          <td><audio controls="" preload="none"><source src="wavs/ms_01_ghf.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/ms_02_ghf.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/ms_03_ghf.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/ms_04_ghf.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/ms_05_ghf.wav"></audio></td>
+        </tr>
+        <tr>
+          <td class="first-col">VITS</td>
+          <td><audio controls="" preload="none"><source src="wavs/ms_01_vits.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/ms_02_vits.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/ms_03_vits.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/ms_04_vits.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/ms_05_vits.wav"></audio></td>
+        </tr>
+        </tbody>
+      </table>
     </div>
     <div>
       <a name="sv"><h2>Speech Variation</h2></a>
