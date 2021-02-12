@@ -209,6 +209,54 @@
     <div>
       <a name="as"><h2>Ablation Study</h2></a>
       <hr>
+      <table>
+        <tbody>
+        <tr>
+          <td>
+            <h3>Text</h3>
+          </td>
+          <td class="text">
+            that not more than one bottle of wine or one quart of beer could be issued at one time. No account was taken of the amount of liquors admitted in one day,
+          </td>
+          <td class="text">
+            The prisoner had nothing to deal with but wooden panels, and by dint of cutting and chopping he got both the lower panels out.
+          </td>
+          <td class="text">
+            have now come into general use and are obviously a great improvement on the ordinary "modern style" in use in England, which is in fact the Bodoni type
+          </td>
+          <td class="text">
+            At two:thirty-eight p.m., Eastern Standard Time, Lyndon Baines Johnson took the oath of office as the thirty-sixth President of the United States.
+          </td>
+          <td class="text">
+            The boy declared he saw no one, and accordingly passed through without paying the toll of a penny.
+          </td>
+        </tr>
+        <tr>
+          <td class="first-col">Ground Truth</td>
+          <td><audio controls="" preload="none"><source src="wavs/ss_01_gt.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/ss_02_gt.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/ss_03_gt.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/ss_04_gt.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/ss_05_gt.wav"></audio></td>
+        </tr>
+        <tr>
+          <td class="first-col">VITS (300k training)</td>
+          <td><audio controls="" preload="none"><source src="wavs/as_01_vits.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/as_02_vits.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/as_03_vits.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/as_04_vits.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/as_05_vits.wav"></audio></td>
+        </tr>
+        <tr>
+          <td class="first-col">w/o Normalizing Flow (300k training)</td>
+          <td><audio controls="" preload="none"><source src="wavs/as_01_noflow.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/as_02_noflow.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/as_03_noflow.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/as_04_noflow.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="wavs/as_05_noflow.wav"></audio></td>
+        </tr>
+        </tbody>
+      </table>
     </div>
   </body>
 </html>
